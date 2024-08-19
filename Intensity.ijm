@@ -5,7 +5,7 @@
 //      and export the ROIs again in the TrackMate window.
 
 NumROI = 5516
-SaveDirectory = "D:/Folder"    // Result folder
+SaveDirectory = "D:/Debasis"    // Result folder
 
 for (i=0; i<NumROI;i++){
 	roiManager("Select", i);
@@ -15,15 +15,12 @@ for (i=0; i<NumROI;i++){
     roiManager("Set Line Width", 0);
 	run("Measure");  
 	}
-	
-roiManager("List");
-saveAs("Results", SaveDirectory +"/ROI.csv");  // Save ROI info
 run("Clear Results"); // The first time 'Measure' does not give you the correct measurements so we have to clear them.
-
 for (i=0; i<NumROI;i++){
 	roiManager("Select", i);
 	run("Measure");  // This time is correct.
 	}
-	
 saveAs("Results", SaveDirectory + "/Results.csv");  // Save intensity measurements
+roiManager("List");
+saveAs("Results", SaveDirectory +"/ROI.csv");  // Save ROI info
 IJ.log("Comleted");
