@@ -12,5 +12,15 @@ StarDist offers an efficient model for segmenting nuclei in 2D fluorescence imag
 
 Files
 ------------
-ImageJ macro scripts are for the intensity measurement of individual tracks over time.
+The ImageJ macro script is for the intensity measurement of individual tracks over time.
 The Python script is for tidying up the data and plotting figures. 
+
+Instruction
+------------
+1. Open the image file for segmentation and tracking in ImageJ.
+2. Select 'ImageJ -> Plugins -> Tracking -> TrackMate'.
+3. Select StarDist dector and run the programme with parameters of your choice.
+4. In the 'Select an action' window, execute 'Spot auto-naming', 'Trim non-visible data' and 'Export spots to IJ ROIs -> All spots' sequencially. The polygon ROIs of the segmented cells will be recored in the ROI manager. 
+5. In the 'ROI manager', click 'More -> List' to see a summary of the identified ROIs. Record the total number of ROIs, which is the last number of the first column in the table.
+6. Select 'ImageJ -> Plugins -> Macros -> Startup Marcros...' and open the ImageJ macro script (ending with .ijm).
+7. Modify the NumROI and SavingDirectory and run the script. 
