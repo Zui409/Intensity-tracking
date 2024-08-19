@@ -28,6 +28,7 @@ ImageJ:
 7. Modify the NumROI and SavingDirectory and run the script. 
 
 Python:
+
 8. Install the required packages.
 9. Specify the data folder that contains the .csv files from ImageJ and parameters of your choice.
 10. Run the script in Spyder or other Python IDE.
