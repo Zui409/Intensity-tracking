@@ -4,7 +4,9 @@ Track the change of fluorescence intensity of cells over time using TrackMate-St
 Software
 ------------
 ImageJ
-Spyder (any pyhton IDE) 
+
+Spyder (any pyhton IDE): Packages can be installed using the environment.yml  
+
 ImageJ Plug-in: TrackMate-StarDist: https://imagej.net/plugins/trackmate/detectors/trackmate-stardist
 
 Description
