@@ -18,8 +18,10 @@ StarDist offers an efficient model for segmenting nuclei in 2D fluorescence imag
 
 Files
 ------------
-The ImageJ macro script is for the intensity measurement of individual tracks over time.
+The ImageJ macro script (Intensity.ijm) is for the intensity measurement of individual tracks over time.
 The Python script is for tidying up the data and plotting figures. 
+
+Another ImageJ macro script (Tissue_imaging.ijm) is for thresholding analysis for the Tissue imaging data. 
 
 Instruction
 ------------
